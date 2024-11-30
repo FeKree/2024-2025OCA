@@ -2,7 +2,7 @@
 #include <cmath>
 #include <stdlib.h>
 #include <string.h>
-using namespace std;
+using namespace std; 
 int main()
 { 
     setlocale(LC_ALL, "ru");
