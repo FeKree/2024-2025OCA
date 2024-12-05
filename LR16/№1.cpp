@@ -12,12 +12,13 @@ struct person
     int math[1];
     int inf[1];
     int him[1];
-    float average() {
+    float average()
+    {
         return(math[0] + fiz[0] + him[0] + inf[0]) / 4;
     }
 };
 
-int main() 
+int main()
 {
     setlocale(LC_ALL, "ru");
     int gr, ball;
@@ -43,13 +44,13 @@ int main()
 
     cout << "Введите группу интересующую вас: " << endl;
     cin >> gr;
-    for (int i{}; i < 3; i++) 
+    for (int i{}; i < 3; i++)
     {
         if (stud[i].n_group == gr)
         {
             if (stud[i].average() > ball)
             {
-                cout << "У него оценка выше , чем балл который вы ввели " << stud[i].fio << endl;
+                cout << "У " << stud[i].fio << " оценка выше, чем балл который вы ввели" << endl;
                 cout << "Его Балл " << stud[i].average() << endl;
             }
 
